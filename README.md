@@ -1,6 +1,10 @@
 # sbt-yax
 
-> Yax has been extracted from the [doobie][1] project. [The code][2] has been written by Rob Norris, not me.
+[ ![Download][download_img] ][download_link]
+
+> Yax has been extracted from the [doobie][doobie] project. [The code][doobie_yax] has been written by Rob Norris, not
+> me.
+>
 > I have only converted it to an sbt plugin.
 
 
@@ -10,17 +14,12 @@ generate multiple projects that are barely different; e.g. scala versions, libra
 
 ### Installing sbt-yax
 
-To add sbt-yax to your build, two updates are required.
+To add sbt-yax, just update your `project/plugins.sbt` file.
 
 ```sbt
 // in project/plugins.sbt
 resolvers += Resolver.url("plippe-sbt-yax", url("http://dl.bintray.com/plippe/sbt-yax"))(Resolver.ivyStylePatterns)
-addSbtPlugin("com.github.plippe" % "sbt-yax" % "0.1.0")
-```
-
-```sbt
-// in build.sbt
-enablePlugins(Yax)
+addSbtPlugin("com.github.plippe" % "sbt-yax" % "XXX")
 ```
 
 
@@ -29,7 +28,7 @@ enablePlugins(Yax)
 #### Defining your yax projects
 
 Here are two identical projects. The only difference is that one outputs foo, while the other outputs bar. This problem
-could have been solved in many simpler ways. For harder examples, look at the [other examples].
+could have been solved in many simpler ways. For harder examples, look at the [other examples][examples].
 
 ```sbt
 // in build.sbt
@@ -78,6 +77,10 @@ any references to `bar`, and `bar` none to `foo`. This is particularly useful wh
 different libraries, and the blocks contain the imports.
 
 
-[1]: https://github.com/tpolecat/doobie
-[2]: https://github.com/tpolecat/doobie/blob/c2bcbf52d324b79f2f07c4f9f353169141cb0f6b/project/yax.scala
-[3]: https://github.com/plippe/sbt-yax/tree/master/examples
+[download_img]: https://api.bintray.com/packages/plippe/sbt-yax/sbt-yax/images/download.svg
+[download_link]: https://bintray.com/plippe/sbt-yax/sbt-yax/_latestVersion
+
+[doobie]: https://github.com/tpolecat/doobie
+[doobie_yax]: https://github.com/tpolecat/doobie/blob/c2bcbf52d324b79f2f07c4f9f353169141cb0f6b/project/yax.scala
+
+[examples]: https://github.com/plippe/sbt-yax/tree/master/examples
