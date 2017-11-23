@@ -18,7 +18,7 @@ To add sbt-yax, just update your `project/plugins.sbt` file.
 
 ```sbt
 // in project/plugins.sbt
-resolvers += Resolver.url("plippe-sbt-yax", url("http://dl.bintray.com/plippe/sbt-yax"))(Resolver.ivyStylePatterns)
+resolvers += Resolver.url("plippe-sbt-yax", url("http://dl.bintray.com/plippe/sbt"))(Resolver.ivyStylePatterns)
 addSbtPlugin("com.github.plippe" % "sbt-yax" % "XXX")
 ```
 
@@ -77,8 +77,8 @@ any references to `bar`, and `bar` none to `foo`. This is particularly useful wh
 different libraries, and the blocks contain the imports.
 
 
-[download_img]: https://api.bintray.com/packages/plippe/sbt-yax/sbt-yax/images/download.svg
-[download_link]: https://bintray.com/plippe/sbt-yax/sbt-yax/_latestVersion
+[download_img]: https://api.bintray.com/packages/plippe/sbt/sbt-yax/images/download.svg
+[download_link]: https://bintray.com/plippe/sbt/sbt-yax/_latestVersion
 
 [doobie]: https://github.com/tpolecat/doobie
 [doobie_yax]: https://github.com/tpolecat/doobie/blob/c2bcbf52d324b79f2f07c4f9f353169141cb0f6b/project/yax.scala
