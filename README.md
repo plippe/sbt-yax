@@ -18,7 +18,7 @@ To add sbt-yax, just update your `project/plugins.sbt` file.
 
 ```sbt
 // in project/plugins.sbt
-resolvers += Resolver.url("plippe-sbt-yax", url("http://dl.bintray.com/plippe/sbt"))(Resolver.ivyStylePatterns)
+resolvers += Resolver.url("plippe-sbt", url("http://dl.bintray.com/plippe/sbt"))(Resolver.ivyStylePatterns)
 addSbtPlugin("com.github.plippe" % "sbt-yax" % "XXX")
 ```
 
