@@ -1,3 +1,3 @@
-resolvers += Resolver.url("plippe-sbt-yax", url("http://dl.bintray.com/plippe/sbt-yax"))(Resolver.ivyStylePatterns)
+resolvers += Resolver.url("plippe-sbt", url("http://dl.bintray.com/plippe/sbt"))(Resolver.ivyStylePatterns)
 
-addSbtPlugin("com.github.plippe" % "sbt-yax" % "475b85016c8c73a8bf1d9c91bc5410e0bb83897d")
+addSbtPlugin("com.github.plippe" % "sbt-yax" % "0a7232fb3b1034e4b59d5bee07d7011ef4848593")
