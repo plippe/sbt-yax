@@ -1,6 +1,7 @@
 # sbt-yax
 
-[ ![Download][download_img] ][download_link]
+[![Build Status](https://app.wercker.com/status/9f1f0701af2be47cfafbea03b0d1a5c0/s/master)](https://app.wercker.com/project/byKey/9f1f0701af2be47cfafbea03b0d1a5c0)
+[![Download](https://api.bintray.com/packages/plippe/sbt/sbt-yax/images/download.svg)](https://bintray.com/plippe/sbt/sbt-yax/_latestVersion)
 
 > Yax has been extracted from the [doobie][doobie] project. [The code][doobie_yax] has been written by Rob Norris, not
 > me.
@@ -76,9 +77,6 @@ Running `sbt foo/run` will display `foo`, while `sbt bar/run` prints `bar`. Furt
 any references to `bar`, and `bar` none to `foo`. This is particularly useful when the two projects depends on
 different libraries, and the blocks contain the imports.
 
-
-[download_img]: https://api.bintray.com/packages/plippe/sbt/sbt-yax/images/download.svg
-[download_link]: https://bintray.com/plippe/sbt/sbt-yax/_latestVersion
 
 [doobie]: https://github.com/tpolecat/doobie
 [doobie_yax]: https://github.com/tpolecat/doobie/blob/c2bcbf52d324b79f2f07c4f9f353169141cb0f6b/project/yax.scala
