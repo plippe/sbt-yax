@@ -12,4 +12,4 @@ test:
 	cd examples/foobar && sbt compile
 
 release:
-	sbt publish
+	sbt ^publish
